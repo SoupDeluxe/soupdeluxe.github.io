@@ -2,11 +2,11 @@
 <html>
 <head>
     <title>My Linktree</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=ff+mark&display=swap');
-        
         body {
-            font-family: 'ff mark', Arial, sans-serif;
+            font-family: 'ff mark', 'Poppins', Arial, sans-serif;
             text-align: center;
             padding: 20px;
         }
@@ -17,35 +17,64 @@
         
         .link-container {
             margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         
         .link-container a {
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-bottom: 20px;
-            padding: 10px;
+            padding: 30px;
             background-color: #f1f1f1;
             color: #333;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 15px;
             transition: background-color 0.3s ease;
+            width: 500px; /* Adjust the width as per your preference */
+            height: auto; /* Adjust the height as per your preference */
         }
         
         .link-container a:hover {
             background-color: #ccc;
         }
+        
+        .link-container a img.icons {
+            width: 35px;
+            height: 35px;
+            margin-right: 10px;
+        }
+
+        .link-container a img.main {
+            width: 350px;
+            height: auto;
+            margin-left: 30px;
+            border-radius: 15px;
+        }
     </style>
 </head>
 <body>
-    <h1>PayLogs</h1>
+    <h1>Welcome to PayLogs</h1>
     
     <div class="link-container">
-        <a href="https://example.com">Website</a>
-        <a href="https://instagram.com">Instagram</a>
-        <a href="https://twitter.com">Twitter</a>
-        <a href="https://youtube.com">YouTube</a>
-        <!-- Add more links as needed -->
-    </div>
+        <a href="https://example.com">
+            <img src="/Users/flo/Desktop/UsefulPython/site/Telegram.svg" alt="TG Icon" class="icons">Our Telegram
+            <img src="/Users/flo/Desktop/UsefulPython/site/Telegram.jpeg" alt="Main Image" class="main">
+        </a>
+        <a href="https://example.com">
+            <img src="/Users/flo/Desktop/UsefulPython/site/Visa.svg" alt="Visa Icon" class="icons">Buy VISA
+            <img src="/Users/flo/Desktop/UsefulPython/site/VisaCC.webp" alt="Main Image" class="main">
+        </a>
+        <a href="https://example.com">
+            <img src="/Users/flo/Desktop/UsefulPython/site/Mastercard.svg" alt="MC Icon" class="icons">Buy MasterCard
+            <img src="/Users/flo/Desktop/UsefulPython/site/MastercardCC.jpg" alt="Main Image" class="main">
+        </a>
+    </div>    
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
     <script>
         // Add any additional JavaScript functionality here if required
     </script>
